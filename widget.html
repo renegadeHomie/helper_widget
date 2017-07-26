@@ -1,0 +1,179 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="widget.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Latest compiled and minified Bootsrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<a for="widget" data-toggle="collapse" href="#widget" aria-expanded="true" aria-controls="widget">
+    <button class="btn btn-success" id="widget-button"><span>+</span></button>
+</a>
+
+
+<div class="container collapse" id="widget">
+  	<div class="tab-container">
+
+	    <div class="tab-strip">
+
+	      <span class="tab" id="chat">
+	        <button class="tab-button"><span><i class="fa fa-comment"></i>   Live Chat</span></button>
+	      </span>
+
+	      <span class="tab" id="faq">
+	        <button class="tab-button"><span><i class="fa fa-search"></i>   FAQ</span></button>
+	      </span>
+	      
+	      <span class="tab active" id="mail">
+	        <button class="tab-button"><span><i class="fa fa-envelope-o"></i>   Mail Us</span></button>
+	      </span>
+	      
+	      <a for="widget" data-toggle="collapse" href="#widget" aria-expanded="true" aria-controls="widget">
+	        <button class="tab-close"><span>x</span></button>
+	      </a>
+	    
+	    </div>
+	       
+	    <!-- Chat -->
+	    
+	    <div class="tabs-content chat hide">
+	     	<div class="well well-lg">
+		        <div class="chat-bot">
+		     		<div class="chat-header chatstyle">
+		        		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar">
+		        		<div class="chat-about">
+		          			<div class="chat-with">Chat with Support</div>
+		          			<div class="chat-num-messages">2 unread messages</div>
+		        		</div>
+		        		<i class="fa fa-star"></i>
+		      		</div>
+			      	<div class="chat-history">
+			        	<ul style="list-style: none;">
+			          		<li>
+			            		<div class="message-data">
+			              			<span class="message-data-name"><i class="fa fa-circle online"></i>Adam</span> 
+			              			<span class="message-data-time">10:10 AM, Today</span> &nbsp; &nbsp;
+			            		</div>
+			            		<div class="message my-message">
+			              			Hey there! You have reached Recruiter Box Support.
+			            		</div>
+			          		</li>
+			          		<li>
+			            		<div class="message-data">
+			              			<span class="message-data-name"><i class="fa fa-circle online"></i>Adam</span> 
+			          				<span class="message-data-time">10:14 AM, Today</span> &nbsp; &nbsp;
+			            		</div>
+			            		<div class="message my-message">
+			              			What product do you need assistance with?            
+			            		</div>
+			          		</li>
+			        	</ul>
+			      	</div>  
+			        <div class=" row chat-message chatstyle">
+		      			<div class="col-sm-10">
+		        			<input type="text" class="form-control" name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3">
+		      			</div>
+		    			<div class="col-sm-2">
+		       				<button class="btn btn-primary">Send</button>
+		      			</div>
+		      		</div>
+	    		</div>
+	  		</div>  
+	    </div>
+		<!--Chat-->
+
+	    <div class="tabs-content faq hide">
+	      	<div class="row">
+	        	<div class="col-sm-4 border-right">
+	          		<span><h3>Prefer email instead?</h3></span><br>
+	          		<button class="btn btn-default write-to-us">
+	          			<span><i class="fa fa-envelope"></i> Write to us</span>
+	          		</button> <br><br>
+	          		<span>We are quick in responding to your queries.</span>
+	        	</div>
+	        	<div class="col-sm-8 faq-search">
+	          		<div class="row">
+	            		<input id="faq-search" type="text" class="form-control form-rounded" placeholder="What can we help you with? Start typing your question...">
+	          		</div>
+	   				<br>
+	          		<div class="row">
+	            		<a href="#">
+	            			<div class="col-sm-4 faq-button">
+	            				<i class="fa fa-folder fa-2x circle" aria-hidden="true"></i>  <br>Sharing Openings
+	            			</div>
+	            		</a>
+	             		<a href="#">
+	             			<div class="col-sm-4 faq-button">
+	             				<i class="fa fa-thumb-tack  fa-2x circle" aria-hidden="true"></i>  <br>Managing Openings
+	             			</div>
+	             		</a>
+	             		<a href="#">
+	             			<div class="col-sm-4 faq-button">
+	             				<i class="fa fa-address-book-o fa-2x circle" aria-hidden="true"></i>  <br>Managing Candidates
+	             			</div>
+	             		</a>
+	          		</div>
+	          		<br>
+	          		<div class="row">
+	              		<a href="#">
+	              			<div class="col-sm-4 faq-button">
+	              				<i class="fa fa-cogs  fa-2x circle" aria-hidden="true"></i>  <br>Account Management
+	              			</div>
+	              		</a>
+	              		<a href="#">
+	              			<div class="col-sm-4 faq-button">
+	              				<i class="fa fa-handshake-o  fa-2x circle" aria-hidden="true"></i>  <br>Sourcing Candidates
+	              			</div>
+	              		</a>
+	              		<a href="#">
+	              			<div class="col-sm-4 faq-button">
+	              				<i class="fa fa-bug fa-2x circle" aria-hidden="true"></i>  <br>Reporting
+	              			</div>
+	              		</a>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </div>
+	    
+	    <div class="tabs-content mail">
+	      <!-- <form> -->
+	      	<div class="alert alert-success hide">
+	  			<strong>
+	  				<i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+	  			</strong> 
+	  			Message Sent! Thanks for reaching out! Someone from our team will get back to you soon.
+			</div>	
+	        <div class="form-group">
+	          	<input type="email" class="form-control" id="InputEmail" placeholder="To : support@recruiterbox.com" disabled>
+	        </div>
+	        <div class="form-group">
+	          	<input type="text" class="form-control" id="InputSubject" placeholder="Subject">
+	        </div>
+	        <div class="form-group">
+	            <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+	        </div>
+	        <div class="form-group row">
+	          	<div class="col-sm-6">
+	            	<label for="file-input" style="color: #286090;">
+	             		<i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>Attach files
+	            	</label>
+	            	<input type="file" class="file-input hide" name="file-input" id="file-input">
+	          	</div>
+	          	<div class="col-sm-6">
+	            	<button type="" class="btn btn-primary send-mail">Send Mail</button>
+	         	</div>
+	        </div>
+	      <!-- </form> -->
+	    </div>
+	</div>
+</div>
+
+
+<body>
+  	<!-- jQuery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  	<!-- Latest compiled JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="widget.js" type="text/javascript"></script>
+</body>
